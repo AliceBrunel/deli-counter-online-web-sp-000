@@ -19,16 +19,16 @@ def line(array)
   puts line_state
 end
 
-def take_a_number(array,name)
+ddef take_a_number(array,name)
   #puts the person's name along with their position in the line
-  add = []
-  add << name
-  array.push(add)
+  add = name.split
+  array.push(name)
   add.each do |i|
     index = array.index(i) + 1
     puts "Welcome, #{name}. You are number #{index} in line."
   end
 end
+
 
 def now_serving
   #puts the next person in line and then remove them from the front.
