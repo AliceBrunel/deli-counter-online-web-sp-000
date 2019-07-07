@@ -21,6 +21,7 @@ end
 
 def take_a_number(array,name)
   #puts the person's name along with their position in the line
+  
 end
 
 def now_serving
