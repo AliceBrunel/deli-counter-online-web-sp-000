@@ -4,17 +4,17 @@ katz_deli = []
 def line(array)
   #show the current place in the line
   #if there is no line, puts empty
-  line_state = "The line is currently "
+  line_state = "The line is currently"
   if array.length > 0
-    line_list = ""
-      array.each do |i|
+    line_list = ":"
+      array.each do |i|     
         name = i
         index = array.index(i) + 1
-        line_list << "#{index}. #{name} "
+        line_list << " #{index}. #{name}"
       end
     line_state << line_list
   else
-    line_state << "empty."
+    line_state << " empty."
   end
   puts line_state
 end
