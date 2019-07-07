@@ -6,8 +6,9 @@ def line(array)
   #if there is no line, puts empty
   if array.length > 0
     array.each do |i|
-      place = i - 1
-      puts "#{place} : #{i}"
+      name = i
+      index = array.index(i) + 1
+      puts " #{index} : #{name}"
     end
   else
     puts "The line is currently empty."
