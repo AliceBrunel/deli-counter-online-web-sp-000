@@ -33,5 +33,10 @@ end
 def now_serving(array)
   #puts the next person in line and then remove them from the front.
   #If there is nobody in line, puts "There is nobody waiting to be served!"
-  array.any? ? array.shift : puts("There is nobody waiting to be served!")
+  if array.any?
+    name = array.shift
+    puts "Currently serving #{name}."
+  else
+    puts("There is nobody waiting to be served!")
+  end
 end
