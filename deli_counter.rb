@@ -21,7 +21,11 @@ end
 
 def take_a_number(array,name)
   #puts the person's name along with their position in the line
-  
+  array.push(name)
+  array.each do |i|
+    index = array.index(i) + 1
+    puts "#{name} #{index}"
+  end
 end
 
 def now_serving
