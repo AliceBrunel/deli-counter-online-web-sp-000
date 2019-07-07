@@ -4,6 +4,11 @@ katz_deli = []
 def line(array)
   #show the current place in the line
   #if there is no line, puts empty
+  if
+    array.each do |i|
+      place = i - 1
+      puts "#{place} : #{i}"
+    end
   puts "The line is currently empty."
 end
 
