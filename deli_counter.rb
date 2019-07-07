@@ -21,8 +21,10 @@ end
 
 def take_a_number(array,name)
   #puts the person's name along with their position in the line
-  array.push(name)
-  array.each do |i|
+  add = []
+  add << name
+  array.push(add)
+  add.each do |i|
     index = array.index(i) + 1
     puts "Welcome, #{name}. You are number #{index} in line."
   end
