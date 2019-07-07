@@ -33,4 +33,5 @@ end
 def now_serving
   #puts the next person in line and then remove them from the front.
   #If there is nobody in line, puts "There is nobody waiting to be served!"
+  
 end
