@@ -19,13 +19,13 @@ def line(array)
   puts line_state
 end
 
-ddef take_a_number(array,name)
+def take_a_number(array,name)
   #puts the person's name along with their position in the line
   add = name.split
   array.push(name)
   add.each do |i|
-    index = array.index(i) + 1
-    puts "Welcome, #{name}. You are number #{index} in line."
+    place = array.index(i) + 1
+    puts "Welcome, #{name}. You are number #{place} in line."
   end
 end
 
